@@ -2,10 +2,10 @@
 
 document.addEventListener("DOMContentLoaded", ()=> {
 
-    //NAV_BAR GSAP EFFECTS
-    const loginBtn = document.querySelector('.login-btn')
+    //HERO GSAP EFFECTS
     const upSale  = document.querySelector('.sale-text')
     const saleBtn = document.querySelector(".sale-btn")
+    const dropDownBtn = document.querySelectorAll(".dropdowns")
 
     gsap.from(upSale , {
         duration : 2,
@@ -25,6 +25,11 @@ document.addEventListener("DOMContentLoaded", ()=> {
         ease : "elastic.out(1, 1)"
     })
 
+    gsap.from(dropDownBtn , {
+        duration : 2,
+        y : 200,
+        stagger : 0.3
 
+    })
 })
 
