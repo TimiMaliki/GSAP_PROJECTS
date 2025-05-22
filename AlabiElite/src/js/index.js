@@ -35,5 +35,32 @@ document.addEventListener("DOMContentLoaded", ()=> {
         }
 
     })
+
+
+
+    //FEATURED VEHICLES GSAP EFFECTS
+    const f1 = document.querySelector('.f1')
+    const f2 = document.querySelector('.f2')
+    const f3 = document.querySelector('.f3')
+
+    const f_One_timeLine = gsap.timeline()
+
+    f_One_timeLine.from(f1,{
+        duration : 1,
+        opacity : 0,
+        x : -50
+    })
+
+    f_One_timeLine.from(f2,{
+        duration : 1,
+        opacity : 0,
+        scale : 0.5,
+        y : 50
+    })
+    f_One_timeLine.from(f3,{
+        duration : 1,
+        opacity : 0,
+        x : 50
+    })
 })
 
