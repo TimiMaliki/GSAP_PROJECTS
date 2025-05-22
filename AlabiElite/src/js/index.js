@@ -12,7 +12,8 @@ document.addEventListener("DOMContentLoaded", ()=> {
         x : 300 ,
         rotation : -90,
         opacity : 0,
-        ease : "bounce.out"
+        delay:1,
+        ease : "elastic.out(1, 1)"
     })
 
     gsap.from (saleBtn , {
@@ -20,7 +21,8 @@ document.addEventListener("DOMContentLoaded", ()=> {
         x : -300 ,
         rotation : -90,
         opacity : 0,
-        ease : "bounce.out"
+        delay:2,
+        ease : "elastic.out(1, 1)"
     })
 
 
