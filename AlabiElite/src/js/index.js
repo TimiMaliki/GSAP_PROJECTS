@@ -27,8 +27,12 @@ document.addEventListener("DOMContentLoaded", ()=> {
 
     gsap.from(dropDownBtn , {
         duration : 2,
+        opacity : 0,
         y : 200,
-        stagger : 0.3
+        stagger : {
+            each : 0.3,
+            from : "start"
+        }
 
     })
 })
