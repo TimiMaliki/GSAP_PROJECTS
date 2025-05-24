@@ -10,6 +10,8 @@ document.addEventListener("DOMContentLoaded", ()=> {
     const upSaleTrigger = document.querySelector(".upsale-trigger")
      const saleBtn = document.querySelector(".sale-btn")
     const dropDownBtn = document.querySelectorAll(".dropdowns")
+    const dropDownTrigger = document.querySelectorAll(".drops-trigger")
+
 
    
 
@@ -22,10 +24,10 @@ document.addEventListener("DOMContentLoaded", ()=> {
         ease : "elastic.out(1, 1)",
         scrollTrigger : {
             trigger : upSaleTrigger,
-            markers : true,
+            // markers : true,
             start: "top 25%",
             end : "bottom 35%",
-            toggleActions : "restart pause reverse reset"
+            toggleActions : "restart  pause reverse reset"
         }
     })
 
@@ -39,23 +41,28 @@ document.addEventListener("DOMContentLoaded", ()=> {
         ease : "elastic.out(1, 1)",
         scrollTrigger : {
             trigger : upSaleTrigger,
-            markers : true,
+            // markers : true,
             start: "top 25%",
             end : "bottom 35%",
-            toggleActions : "restart pause reverse reset"
+            toggleActions : "restart  pause reverse reset"
         }
     })
 
-    // gsap.from(dropDownBtn , {
-    //     duration : 2,
-    //     opacity : 0,
-    //     y : 200,
-    //     stagger : {
-    //         each : 0.3,
-    //         from : "start"
-    //     }
+    gsap.from(dropDownBtn , {
+        duration : 2,
+        opacity : 0,
+        y : 200,
+        stagger : {
+            each : 0.3,
+            from : "start"
+        },
+        scrollTrigger : {
+            trigger : dropDownTrigger,
+            markers : true,
+            start : "top 25%"
+        }
 
-    // })
+    })
 
 
  
