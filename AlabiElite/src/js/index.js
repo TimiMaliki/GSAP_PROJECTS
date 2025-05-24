@@ -46,21 +46,21 @@ document.addEventListener("DOMContentLoaded", ()=> {
     const f_One_timeLine = gsap.timeline()
 
     f_One_timeLine.from(f1,{
-        duration : 1,
+        duration : 2,
         opacity : 0,
-        x : -50
+        x : -100
     })
 
     f_One_timeLine.from(f2,{
-        duration : 1,
+        duration : 2,
         opacity : 0,
         scale : 0.5,
         y : 50
     })
     f_One_timeLine.from(f3,{
-        duration : 1,
+        duration : 2,
         opacity : 0,
-        x : 50
+        x : 100
     })
 })
 
