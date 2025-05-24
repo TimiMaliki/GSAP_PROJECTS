@@ -127,7 +127,7 @@ gsap.from(viewBtn, {
  
  // AUCTION VEHICLES GSAP EFFECTS
 
- const aucTrigger = document.querySelector(".aut-tirgger")
+ const aucTrigger = document.querySelector(".aut-trigger")
  const AucText = document.querySelectorAll(".d1")
  
 
@@ -135,8 +135,8 @@ gsap.from(viewBtn, {
  gsap.from(AucText , {
     duration : 2,
     opacity : 0,
-    y : 200,
-    scale: 2.5,
+    y : 100,
+    scale: 1.5,
     stagger : {
         each : 0.3,
         from : "start"
