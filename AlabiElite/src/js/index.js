@@ -23,7 +23,9 @@ document.addEventListener("DOMContentLoaded", ()=> {
         scrollTrigger : {
             trigger : upSaleTrigger,
             markers : true,
-            start: "top 25%"
+            start: "top 25%",
+            end : "bottom 35%",
+            toggleActions : "restart pause reverse reset"
         }
     })
 
@@ -38,7 +40,9 @@ document.addEventListener("DOMContentLoaded", ()=> {
         scrollTrigger : {
             trigger : upSaleTrigger,
             markers : true,
-            start: "top 25%"
+            start: "top 25%",
+            end : "bottom 35%",
+            toggleActions : "restart pause reverse reset"
         }
     })
 
