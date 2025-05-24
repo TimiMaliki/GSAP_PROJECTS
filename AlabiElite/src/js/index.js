@@ -125,6 +125,33 @@ gsap.from(viewBtn, {
   });
 
  
+ // AUCTION VEHICLES GSAP EFFECTS
+
+ const aucTrigger = document.querySelector(".aut-tirgger")
+ const AucText = document.querySelectorAll(".d1")
+ 
+
+
+ gsap.from(AucText , {
+    duration : 2,
+    opacity : 0,
+    y : 200,
+    scale: 2.5,
+    stagger : {
+        each : 0.3,
+        from : "start"
+    },
+    scrollTrigger : {
+        trigger : aucTrigger,
+        scrub : true,
+        pin : true
+    }
+
+})
+
+  
+
+
 })
 
 
