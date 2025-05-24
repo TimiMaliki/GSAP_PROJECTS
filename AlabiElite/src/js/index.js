@@ -71,7 +71,8 @@ document.addEventListener("DOMContentLoaded", ()=> {
     const f_trigger = document.querySelector(".Featured-Vehicle-trigger")
     const f_trigger_1 = document.querySelector(".Featured-Vehicle-trigger-f1")
     const f_trigger_2 = document.querySelector(".Featured-Vehicle-trigger-f2")
-    const f_trigger_3 = document.querySelector(".Featured-Vehicle-trigger-f3")
+    const  viewBtn = document.querySelector(".viewBtn")
+    const viewTrigger = document.querySelector(".view-now ")
 
 
 
@@ -112,6 +113,16 @@ gsap.from(f3, {
   }
 });
 
+gsap.from(viewBtn, {
+    duration: 1.5,
+    opacity: 0,
+    y: 100,
+    ease: "power3.out",
+    scrollTrigger: {
+      trigger:viewTrigger,
+      start: "top 25%",
+    }
+  });
 
  
 })
