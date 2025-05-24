@@ -73,38 +73,45 @@ document.addEventListener("DOMContentLoaded", ()=> {
     const f_trigger_2 = document.querySelector(".Featured-Vehicle-trigger-f2")
     const f_trigger_3 = document.querySelector(".Featured-Vehicle-trigger-f3")
 
-    const f_One_timeLine = gsap.timeline()
 
-    f_One_timeLine.from(f1,{
-        duration : 2,
-        opacity : 0,
-        x : -100,
-        ease : "power2.out",
-        scrollTrigger : {
-            trigger : f_trigger,
-            start : "top center"
-        }
-    })
 
-    f_One_timeLine.from(f2,{
-        duration : 2,
-        opacity : 0,
-        scale : 0.5,
-        y : 150, 
-        ease :"power2.out",scrollTrigger : {
-            trigger : f_trigger,
-            start : "top center"
-        }
-    })
-    f_One_timeLine.from(f3,{
-        duration : 2,
-        opacity : 0,
-        x : 100, 
-        ease : "power2.out",scrollTrigger : {
-            trigger : f_trigger,
-            start : "top center"
-        }
-    })
+// Animate f1
+gsap.from(f1, {
+  duration: 1.5,
+  opacity: 0,
+  x: 100,
+  ease: "power3.out",
+  scrollTrigger: {
+    trigger: f_trigger,
+    start: "top 25%",
+  }
+});
+
+// Animate f2
+gsap.from(f2, {
+  duration: 1.5,
+  opacity: 0,
+  scale: 0.8,
+  y: 50,
+  ease: "power3.out",
+  scrollTrigger: {
+    trigger: f_trigger_1,
+    start: "top 25%",
+  }
+});
+
+// Animate f3
+gsap.from(f3, {
+  duration: 1.5,
+  opacity: 0,
+  x: 100,
+  ease: "power3.out",
+  scrollTrigger: {
+    trigger:f_trigger_2,
+    start: "top 25%",
+  }
+});
+
 
  
 })
