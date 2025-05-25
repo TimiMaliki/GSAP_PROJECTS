@@ -162,9 +162,22 @@ gsap.to(progressBar , {
       trigger : body,
       start: "top 0%",
       end : "bottom 100%",
-      scrub: true
+      scrub: true,
     }
 })
+
+// CURSOR MOVEMENT
+const cursor  = document.querySelector(".cursor-follower")
+
+document.addEventListener("mousemove" , (e)=>{
+    cursor.classList.remove("hide")
+    gsap.to(cursor,{
+          x : e.clientX,
+          y : e.clientY,
+          ease : "power2.out"
+    })
+})
+
 
 
 })
