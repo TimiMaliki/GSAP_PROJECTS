@@ -149,7 +149,22 @@ gsap.from(viewBtn, {
 
 })
 
-  
+
+// PROGRESS BAR
+const progressBar = document.querySelector(".bar")
+const body  = document.querySelector("body")
+
+gsap.to(progressBar , {
+    width : "100%",
+    duration : 1,
+    ease : "power1.inOut",
+    scrollTrigger : {
+      trigger : body,
+      start: "top 0%",
+      end : "bottom 100%",
+      scrub: true
+    }
+})
 
 
 })
