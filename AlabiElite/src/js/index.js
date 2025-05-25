@@ -168,18 +168,26 @@ gsap.to(progressBar , {
 
 // CURSOR MOVEMENT
 const cursor  = document.querySelector(".cursor-follower")
+const navLinks  = document.querySelectorAll(".nav-link")
 
-document.addEventListener("mousemove" , (e)=>{
+document.addEventListener("mouseover" , (e)=>{
     cursor.classList.remove("hide")
     gsap.to(cursor,{
-          x : e.clientX,
-          y : e.clientY,
-          ease : "power2.out"
+        duration: 0.4,
+        x: e.clientX,
+        y: e.clientY,
+        ease: 'power2.out'
     })
 })
 
+navLinks.forEach((link) => {
+    link.addEventListener("mouseenter", ()=>{
+           cursor.classList.add("active")   
+    })
 
-
+    link.addEventListener("mouseleave", ()=>{
+        cursor.classList.remove("active")
+ })
 })
 
 
@@ -190,4 +198,4 @@ document.addEventListener("mousemove" , (e)=>{
 
 
 
-    
+})
