@@ -104,4 +104,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
   });
 
+
+  /* change text of Furniture images container */
+
 });
