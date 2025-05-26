@@ -160,3 +160,64 @@ span:hover{
     color: #fff;
     transition: all ease-in 2s;
 }
+
+/* Furniture section container */
+.furniture{
+    height: 100vh;
+    position: relative;
+    margin: 0px 2rem;
+}
+.furniture-title{
+    bottom :0;
+    font-size: 14vw;
+    font-weight: 800;
+    letter-spacing: 5px;
+    color: #000;
+    margin-bottom: 1rem;
+}
+.furniture-grid-wrapper{
+    width: 100%;
+    height: 100vh;
+}
+
+.grid-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 8vw;
+}
+
+/* Furniture images container */
+
+.box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box{
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.box:nth-child(1){
+    aspect-ratio: 1/1.8;
+    flex-basis: 120px;
+    transform: translateY(10%);
+}
+.box:nth-child(2){
+    aspect-ratio: 1/1.2;
+    flex-basis: 100px;
+    transform: translateY(10%);
+}
+.box:nth-child(3){
+    aspect-ratio: 1/1;
+
+    transform: translateY(-120%);
+}
+.box:nth-child(4){
+    aspect-ratio: 1/1.4;
+    flex-basis: 200px;
+    transform: translateY(60%);
+}
