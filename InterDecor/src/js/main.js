@@ -82,9 +82,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 
   /* Furniture images container */
-  const gridItems  = document.querySelector(".grid-item")
-
+  const gridItems  = document.querySelectorAll(".grid-item")
   const gridWrapper = gsap.utils.toArray(gridItems)
+
+  console.log(gridWrapper)
 
   gridWrapper.forEach(wrapper => {
     const boxes = wrapper.querySelectorAll(".box")
@@ -106,5 +107,49 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 
   /* change text of Furniture images container */
+  const headingTag  = document.querySelector(".furniture-title h2")
+  const container  = document.querySelector(".furniture-container")
+  const h2_tL = gsap.timeline({
+    scrollTrigger : {
+
+    }
+  })
+  
+    gridWrapper.forEach((wrapper , index )=> {
+    ScrollTrigger.create({
+      trigger : wrapper,
+      markers : true,
+      start : "bottom-=20% bottom",
+      end : "bottom top",
+      onEnter : () => {
+        updateHeading(index)
+        gsap.set(headingTag, {
+          position : "fixed",
+          bottom : "0",
+          zIndex : -1000,
+        })
+      },
+      onEnterBack : () => {
+        updateHeading(index)
+        gsap.set(headingTag, {
+          position : "relative",
+          bottom : "0",
+        })
+      }
+
+    })
+
+  });
+
+
+  const updateHeading = (array)=>{
+        const headingEl = ["Furniture","Door","Office","Tech"]
+        headingTag.textContent = headingEl[array]
+  }
+
+  // initial text display
+
+updateHeading(0)
 
 });
+
