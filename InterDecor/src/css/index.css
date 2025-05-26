@@ -7,12 +7,25 @@
 body {
   width: 100%;
   font-family: "Inter", sans-serif;
-  background: #000;
+  background-color: var(--primary-backgroundColor);
+  color: var(--primary-text-color);
   transition: all 3s;
   overflow-x: hidden;
 }
 
 /* UTILITIES */
+
+:root{
+  --primary-backgroundColor : #000;
+  --primary-text-color : #fff;
+}
+
+ /* dark theme */
+.darkTheme {
+  --primary-backgroundColor : #fff;
+  --primary-text-color : #000;
+}
+
 ul {
   display: flex;
   list-style: none;
@@ -21,7 +34,7 @@ ul {
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: var(--primary-text-color);
   text-transform: uppercase;
   font-size: 1.6vw;
   letter-spacing: -1px;
@@ -52,8 +65,8 @@ a:hover {
   width: 100%;
   z-index: 10;
   text-align: center;
-  background-color: #000;
-  color: #fff;
+  background-color: var(--primary-backgroundColor);
+  color: var(--primary-text-color);
 }
 .site-now {
   display: flex;
@@ -69,6 +82,7 @@ a:hover {
   font-weight: 900;
   letter-spacing: 10px;
   text-transform: uppercase;
+  color: var(--primary-text-color);
 }
 .copy-right {
   font-size: 1.2vw;
@@ -80,7 +94,7 @@ a:hover {
 .discover {
   display: flex;
   justify-content: center;
-  color: #fff;
+  color: var(--primary-text-color);
 }
 .discover-container {
   display: flex;
@@ -123,10 +137,7 @@ a:hover {
     left: 0;
     clip-path: circle(20% at 50% 50%);
 }
-.lightTheme {
-    background: #fff;
-    color: #000;
-}
+
 
 /* tag style */
 

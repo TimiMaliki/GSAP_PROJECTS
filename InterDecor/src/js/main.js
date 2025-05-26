@@ -14,7 +14,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
       y: 0,
       duration: 1,
       scale: 1,
-      color: "#fff",
       scrollTrigger: {
         trigger: brand,
         end: "bottom top",
@@ -71,10 +70,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
       scrub: 2,
       pin : true ,
       onEnter : () => {
-        document.body.classList.add("lightTheme")
+        document.body.classList.add("darkTheme")
       },
       onLeaveBack: () => {
-        document.body.classList.remove("lightTheme")
+        document.body.classList.remove("darkTheme")
       },
       ease: "power2.out",
     },
@@ -109,20 +108,16 @@ document.addEventListener("DOMContentLoaded", (event) => {
   /* change text of Furniture images container */
   const headingTag  = document.querySelector(".furniture-title h2")
   const container  = document.querySelector(".furniture-container")
+
   const h2_tL = gsap.timeline({
     scrollTrigger : {
-
-    }
-  })
-  
-    gridWrapper.forEach((wrapper , index )=> {
-    ScrollTrigger.create({
-      trigger : wrapper,
+      trigger : container,
       markers : true,
-      start : "bottom-=20% bottom",
-      end : "bottom top",
+      start : "top 50%",
+      end : "bottom 50%",
+      scrub : true,
+      ease : "ease",
       onEnter : () => {
-        updateHeading(index)
         gsap.set(headingTag, {
           position : "fixed",
           bottom : "0",
@@ -130,11 +125,30 @@ document.addEventListener("DOMContentLoaded", (event) => {
         })
       },
       onEnterBack : () => {
-        updateHeading(index)
         gsap.set(headingTag, {
           position : "relative",
           bottom : "0",
         })
+      }
+    }
+  })
+  
+    gridWrapper.forEach((wrapper , index )=> {
+    ScrollTrigger.create({
+      trigger : wrapper,
+      start : "bottom-=20% bottom",
+      end : "bottom top",
+      onEnter : () => {
+        updateHeading(index)
+        if( index === 0){
+          document.body.classList.remove("darkTheme")
+        }
+      },
+      onEnterBack : () => {
+        updateHeading(index)
+        if( index === 0){
+          document.body.classList.add("darkTheme")
+        }
       }
 
     })
