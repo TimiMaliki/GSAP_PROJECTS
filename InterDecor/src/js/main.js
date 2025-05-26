@@ -34,11 +34,22 @@ gsap.fromTo(brand,{
  const SlideTl = gsap.timeline({
     scrollTrigger : {
         trigger : slide,
+         // markers: true,
+        start :"top 20%",
         scrub : 2,
-        ease : "ease"
+        ease : "power2.out"
     }})
 
     SlideTl.to(slide1,{
+        y : 220,
+    })
+    SlideTl.to(slide2,{
+        y : 220,
+    })
+    SlideTl.to(slide3,{
+        y : 220,
+    })
+    SlideTl.to(slide4,{
         y : 220,
     })
 
