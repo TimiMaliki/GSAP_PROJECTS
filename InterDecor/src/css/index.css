@@ -68,7 +68,8 @@ a:hover{
 .brand{
     font-size: 1.9vw;
     font-weight: 900;
-    letter-spacing: -1px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
 }
 .copy-right{
     font-size: 1.2vw;
@@ -90,6 +91,12 @@ a:hover{
     text-align: center;
     margin-top: 8.79rem;
 }
+.slide{
+   background:  red;
+    width: 80vw;
+    max-width: 80vw;
+    overflow: hidden;
+}
 .slide  h1{
     display: block;
     font-size: 13.8vw;
@@ -98,6 +105,11 @@ a:hover{
     line-height: 0.8;
 }
 .lightwidth{
+    font-size: 10.8vw;
     font-weight: 300;
     font-style: italic;
+    letter-spacing: 8px;
+}
+.slide1{
+    
 }

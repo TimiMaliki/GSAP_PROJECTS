@@ -7,12 +7,12 @@
  const brand = document.querySelector('.brand')
 
 gsap.fromTo(brand,{
-      y : -570,
+      y : -270,
       scale : 5,
 }, {
     y : 0, 
-    scale : 1,
     duration : 1,
+    scale : 1,
     color : "#fff",
     scrollTrigger : {
         trigger : brand,
@@ -23,5 +23,23 @@ gsap.fromTo(brand,{
        
     }
 })
+
+//  slide container
+ const slide = document.querySelector(".slide")
+ const slide1 = document.querySelector(".slide-1")
+ const slide2 = document.querySelector(".slide-2")
+ const slide3 = document.querySelector(".slide-3")
+ const slide4 = document.querySelector(".slide-4")
+
+ const SlideTl = gsap.timeline({
+    scrollTrigger : {
+        trigger : slide,
+        scrub : 2,
+        ease : "ease"
+    }})
+
+    SlideTl.to(slide1,{
+        y : 220,
+    })
 
  });
