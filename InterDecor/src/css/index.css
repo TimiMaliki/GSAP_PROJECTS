@@ -184,7 +184,7 @@ span:hover{
     font-size: 14vw;
     font-weight: 800;
     letter-spacing: 5px;
-    color: #000;
+    /* color: ; */
     margin-bottom: 1rem;
 }
 .furniture-grid-wrapper{
