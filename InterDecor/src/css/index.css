@@ -14,7 +14,7 @@ body {
 }
 
 /* UTILITIES */
-ul{
+ul {
   display: flex;
   list-style: none;
   gap: 1rem;
@@ -28,18 +28,17 @@ a {
   letter-spacing: -1px;
   font-weight: 600;
 }
-a:hover{
-    color: red;
-    cursor: pointer;
-    transition: all ease-in-out 0.5s;
+a:hover {
+  color: red;
+  cursor: pointer;
+  transition: all ease-in-out 0.5s;
 }
 
-.sticky{
-   position: sticky;
-   top: 0;
-   z-index: 1000;
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
-
 
 .coverUp-Image {
   width: 100%;
@@ -58,58 +57,59 @@ a:hover{
   color: #fff;
 }
 .site-now {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem 0px;
-    border-bottom: 2px solid #fff;
-    margin: 0px 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0px;
+  border-bottom: 2px solid #fff;
+  margin: 0px 2rem;
 }
-.brand{
-    font-size: 1.9vw;
-    font-weight: 900;
-    letter-spacing: 10px;
-    text-transform: uppercase;
+.brand {
+  font-size: 1.9vw;
+  font-weight: 900;
+  letter-spacing: 10px;
+  text-transform: uppercase;
 }
-.copy-right{
-    font-size: 1.2vw;
-    font-weight: 400;
+.copy-right {
+  font-size: 1.2vw;
+  font-weight: 400;
 }
-
 
 /* main style */
 
-.discover{
-    display: flex;
-    justify-content: center;
-    color: #fff;
+.discover {
+  display: flex;
+  justify-content: center;
+  color: #fff;
 }
-.discover-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-top: 8.79rem;
+.discover-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 8.79rem;
 }
-.slide{
-   background:  red;
-    width: 80vw;
-    max-width: 80vw;
-    overflow: hidden;
+.slide {
+  background: red;
+  border-radius: 9px;
+  width: 80vw;
+  max-width: 80vw;
+  overflow: hidden;
 }
-.slide  h1{
-    display: block;
-    font-size: 13.8vw;
-    font-weight: 800;
-    letter-spacing: -10px;
-    line-height: 0.8;
+.slide h1 {
+  display: block;
+  font-size: 13.8vw;
+  font-weight: 800;
+  letter-spacing: -10px;
+  line-height: 0.8;
 }
-.lightwidth{
-    font-size: 10.8vw;
-    font-weight: 300;
-    font-style: italic;
-    letter-spacing: 8px;
+.lightwidth {
+  font-size: 10.8vw;
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 8px;
 }
-.slide1{
-    
+.img-cover {
+  position: relative;
+  height: 120vh;
 }
