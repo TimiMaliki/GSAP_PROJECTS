@@ -60,11 +60,12 @@ document.addEventListener("DOMContentLoaded", (event) => {
   const imageSecOne = document.querySelector(".imageSecOne");
   const imageSecOneContainer = document.querySelector(".img-container");
 
+
   gsap.to(imageSecOne, {
     clipPath: "circle(1000% at 50% 50%)",
     scrollTrigger: {
       trigger: imageSecOneContainer,
-      markers: true,
+    //   markers: true,
       start: "top top",
       end : "bottom bottom",
       scrub: 2,
