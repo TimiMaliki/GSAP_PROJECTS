@@ -79,4 +79,29 @@ document.addEventListener("DOMContentLoaded", (event) => {
       ease: "power2.out",
     },
   });
+
+
+  /* Furniture images container */
+  const gridItems  = document.querySelector(".grid-item")
+
+  const gridWrapper = gsap.utils.toArray(gridItems)
+
+  gridWrapper.forEach(wrapper => {
+    const boxes = wrapper.querySelectorAll(".box")
+
+    boxes.forEach((box) =>{
+             gsap.from(box,{
+                y : 500,
+                duration : 1,
+                scrollTrigger : {
+                    trigger : box,
+                    start : "top bottom",
+                    end : "bottom top",
+                    scrub : 4,
+                }
+             })
+    })
+
+  });
+
 });

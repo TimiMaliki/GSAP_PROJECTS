@@ -9,6 +9,7 @@ body {
   font-family: "Inter", sans-serif;
   background: #000;
   transition: all 3s;
+  overflow-x: hidden;
 }
 
 /* UTILITIES */
