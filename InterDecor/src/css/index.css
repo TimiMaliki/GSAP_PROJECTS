@@ -181,7 +181,7 @@ span:hover{
 }
 .furniture-title{
     bottom :0;
-    font-size: 14vw;
+    font-size: 10vw;
     font-weight: 800;
     letter-spacing: 5px;
     /* color: ; */
@@ -205,6 +205,7 @@ span:hover{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 12px;
 }
 
 .box{

@@ -157,7 +157,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
 
   const updateHeading = (array)=>{
-        const headingEl = ["Furniture","Door","Office","Tech"]
+        const headingEl = ["Furnitures","Decorations","Kitchen","Bathrooms"]
         headingTag.textContent = headingEl[array]
   }
 
