@@ -216,16 +216,15 @@ span:hover{
 .box:nth-child(1){
     aspect-ratio: 1/1.8;
     flex-basis: 120px;
-    transform: translateY(10%);
+    transform: translateY(40%);
 }
 .box:nth-child(2){
     aspect-ratio: 1/1.2;
     flex-basis: 100px;
-    transform: translateY(10%);
+    transform: translateY(40%);
 }
 .box:nth-child(3){
     aspect-ratio: 1/1;
-
     transform: translateY(-120%);
 }
 .box:nth-child(4){

@@ -109,13 +109,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
   const headingTag  = document.querySelector(".furniture-title h2")
   const container  = document.querySelector(".furniture-container")
 
-  const h2_tL = gsap.timeline({
+  let h2_tL = gsap.timeline({
     scrollTrigger : {
       trigger : container,
-      markers : true,
+      // markers : true,
       start : "top 50%",
-      end : "bottom 50%",
-      scrub : true,
+      end : "top 50%",
+      scrub : 2,
       ease : "ease",
       onEnter : () => {
         gsap.set(headingTag, {
