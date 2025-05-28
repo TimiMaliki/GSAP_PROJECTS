@@ -209,3 +209,45 @@ img{
 .client{
     margin-top: 4rem;
 }
+
+
+/* BRAND STYLE */
+.logos{
+ overflow: hidden;
+ padding: 15rem 0;
+ background: #f2f3f5;
+ white-space: nowrap;
+ position: relative;
+}
+
+.logos:before,
+.logos:after{
+   position : absolute;
+   top: 0;
+   width: 250px;
+   height: 100%;
+   content: "";
+   z-index: 2;
+}
+
+.logos:before{
+   left : 0;
+   background:linear-gradient(to left, rgba(255,255,255,0), #f2f3f5);
+}
+
+.logos:right{
+    left : 0;
+    background:linear-gradient(to left, rgba(255,255,255,0), #f2f3f5);
+ }
+ 
+.logos-slide{
+    display: inline-block;
+    animation: 35s slide infinite linear;
+}
+
+.logos-slide img{
+ height: 150px;
+ border-radius: 50%;
+ margin: 0 40px;
+}
+
