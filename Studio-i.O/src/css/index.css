@@ -268,6 +268,7 @@ a:hover {
   }
 
   .article{
+    position: relative;
     max-width: 320px;
     max-height: 820px;
     width: 260px;
@@ -276,6 +277,24 @@ a:hover {
     margin-top: 3rem;
     overflow: hidden;
     cursor: pointer;
+  }
+
+  .article:hover::before{
+    content: "View more";
+    position: absolute;
+    top: 0rem;
+    left: 0;
+    width: 260px;
+    height: 433px;
+    border-radius: 15px;
+    background: var(--secondary-gradient);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-family);
+    color: var(--primary-white-color);
+    font-size: 1rem;
   }
 
   .article img{
