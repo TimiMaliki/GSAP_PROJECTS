@@ -170,9 +170,18 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:linear-gradient(to bottom, #f5AAF4 0% , #FB89AE 100%);
+    background: linear-gradient(to bottom, #f5AAF4 0% , #FB89AE 100%);
 }
 
 .over-lay{
-    
+    position: relative;
+    z-index: 5;
+    width: 60vw;
+    height: 750px;
+    background: url('../../image/BSI2.webp');
+    background-color: red;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
 }
