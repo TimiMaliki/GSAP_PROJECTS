@@ -70,4 +70,27 @@ recentProject.forEach((project)=>{
 
 
 
+// -------------- CLONINING THE IMAGE SLIDE ANIMATION --------------
 
+var copy = document.querySelector(".logos-slide").cloneNode(true)
+document.querySelector(".logos").appendChild(copy)
+
+
+// -------------- SMOOTH SCROLLING --------------
+
+
+// Initialize Lenis
+const lenis = new Lenis({
+   duration : 6
+  });
+  
+ 
+ 
+
+// Use requestAnimationFrame to continuously update the scroll
+function raf(time) {
+  lenis.raf(time);
+  requestAnimationFrame(raf);
+}
+
+requestAnimationFrame(raf);
