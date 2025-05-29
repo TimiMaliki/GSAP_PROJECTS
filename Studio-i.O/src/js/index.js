@@ -10,7 +10,7 @@ hamburgerMenu.addEventListener("click" , ()=>{
 
 // -------------- ANIMATION --------------
 
-const els = ['#hero-container  .animate span', '.work-section .animate span' , "#brand .animate span" , "#footer .animate span"]
+const els = ['#hero-container  .animate span', '#work-section .animate span' , "#brand .animate span" , "#footer .animate span"]
 
 els.forEach((el)=>{
         gsap.from(el , {
